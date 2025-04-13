@@ -538,5 +538,5 @@ jobs:
         if: ${{ success() }}
         run: |
           echo "Deployment completed successfully! :rocket:" >> $GITHUB_STEP_SUMMARY        
-          deep_link=https://portal.azure.com/#@/resource/subscriptions/$AZURE_SUBSCRIPTION_ID/resourceGroups/rg-$AZURE_ENV_NAME/overview
+          deep_link=https://portal.azure.com/#@/resource/subscriptions/$AZURE_SUBSCRIPTION_ID/resourceGroups/rg-dev/overview
           echo "🔗 [View Resources Deployed Here]($deep_link)" >> $GITHUB_STEP_SUMMARY
